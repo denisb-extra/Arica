@@ -1,0 +1,132 @@
+$mw: 950px;
+$tw: 1200px;
+$lw: 1370px;
+
+$side-edge-d: 80px;
+$side-edge-l: 60px;
+$side-edge-t: 30px;
+$side-edge-m: 15px;
+
+@mixin border {
+	$red: random(256)-1;
+	$green: random(256)-1;
+	$blue: random(256)-1;
+ 	border: 1px solid red;
+ 	border-color: rgb($red, $green, $blue);
+}
+
+@mixin placeholder-color($color) {
+	&::-webkit-input-placeholder { /* WebKit browsers */
+	  color: $color;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	  color: $color;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+	  color: $color;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+	  color: $color;
+	}
+}
+
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Fonts */
+@font-face { 
+  	font-family: 'simpler-light'; 
+  	src: url('../fonts/SimplerPro_V3-Light.otf') format('truetype'); 
+} 
+@mixin f-l {
+	font-family: 'simpler-light';
+	font-weight: 300;
+}
+
+@font-face { 
+  	font-family: 'simpler-regular'; 
+  	src: url('../fonts/SimplerPro_V3-Regular.otf') format('truetype'); 
+} 
+@mixin f-r {
+	font-family: 'simpler-regular';
+	font-weight: 400;
+}
+
+@font-face { 
+  	font-family: 'simpler-bold'; 
+  	src: url('../fonts/Simpler-Bold.otf') format('truetype'); 
+} 
+@mixin f-b {
+	font-family: 'simpler-bold';
+	font-weight: 700;
+}
+
+@font-face { 
+  	font-family: 'simpler-black'; 
+  	src: url('../fonts/SimplerPro_V3-Black.otf') format('truetype'); 
+} 
+@mixin f-bl {
+	font-family: 'simpler-black';
+	font-weight: 900;
+}
+
+/* /Fonts */
+
+
+
+
+/* Global */
+html {
+	margin: 0 !important;
+}
+body {
+	position: relative;
+	margin: 0;
+  	padding: 0;
+  	overflow-x: hidden;
+  	@include f-r;
+  	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	direction: rtl;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+ul {
+	-webkit-padding-start: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+section {
+	width: 100%;
+	max-width: 1920px;
+	margin: auto;	
+	overflow: hidden;
+	position: relative;
+}
+
+.section-inner {
+	max-width: 1388px;
+	padding: 0 10px;
+	width: 100%;
+	margin: auto;
+	position: relative;
+}
+
+
+@import 'parts';
+@import 'index';
+@import 'inner';
