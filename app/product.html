@@ -23,10 +23,11 @@
 	
 	<script src="plugins/jquery-ui/jquery-ui.js"></script>
 	
+	<link rel='stylesheet' id='wp-ulike-css'  href='http://arica.s201.upress.link/wp-content/plugins/wp-ulike/assets/css/wp-ulike.min.css?ver=3.6.0' media='all' />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
+	<header class="desktop">
 		<div class="header-inner">
 			<div class="part-logo">
 				<img src="images/index/logo.png" alt="">
@@ -46,7 +47,10 @@
 			<div class="part-more">
 				<div class="part-top">
 					<a href="#">08.8563535</a>
-					<a href="#">LOG IN</a>
+					<a href="#">
+						<i class="fa fa-sign-in" aria-hidden="true"></i>
+						<span>LOG IN</span>
+					</a>
 				</div>
 				<div class="part-bottom">
 					<a href="#"><img src="images/icons/search.png" alt=""></a>
@@ -57,17 +61,100 @@
 		</div>
 	</header>
 
+	<header class="mobile">
+		<div class="header-inner">
+			<div class="hamburger hamburger--spin">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+			<div class="part-logo">
+				<img src="images/index/logo.png" alt="">
+			</div>
+
+			<a href="tel:123" class="tel">
+				<img src="images/icons/tel.png" alt="">
+			</a>
+		</div>
+		<div class="dropdown">
+			<div class="search-box">
+				<input type="text" placeholder="הקלד לחיפוש">
+			</div>
+			<div class="mobile-menu-cont">
+	            <ul class="mobile-menu">
+	                <li class="current_page_item menu-item-has-children"><a href="/">מוצרים</a>
+	                <li class=""><a href="/">אודות</a> </li>
+	                <li class=""><a href="/">סטודיו</a></li>
+	                <li class=""><a href="/">פרוייקטים</a></li>
+	                <li class=""><a href="/">פרסומים</a></li>
+	                <li class=""><a href="/">צור קשר</a></li>
+	            </ul>  
+	        </div>
+
+        </div>
+	</header>
+
 	<section class="product">
+		<div class="images-mobile mobile">
+			<a href="#" class="back">
+				<img src="images/icons/back.png" alt="">
+			</a>
+			<div class="main-image loading">
+				<img src="images/inner/product/full.png" alt="">
+			</div>
+
+			<div class="thumbs">
+				<div class="thumb">
+					<img src="images/inner/product/thumbs/1.png" alt="">
+				</div>
+				<div class="thumb">
+					<img src="images/inner/product/thumbs/2.png" alt="">
+				</div>
+				<div class="thumb">
+					<img src="images/inner/product/thumbs/3.png" alt="">
+				</div>
+
+			</div>
+		</div>
 		<div class="parts">
 			<div class="part sidebar">
 				<a href="#" class="back">
 					<img src="images/icons/back.png" alt="">
 				</a>
 
-				<p class="main-title">ספסל עץ אסיף</p>
+				<div class="main-title">
+					<span>ספסל עץ אסיף ספסל עץ אסיף</span>
+					<span class="icons mobile">
+						<a href="#"><img src="images/icons/message-m.png" alt=""></a>
+						<div class="wpulike wpulike-default "><div class="wp_ulike_general_class wp_ulike_is_unliked"><button type="button" data-ulike-id="1949" data-ulike-nonce="fd1b4c7458" data-ulike-type="likeThis" data-ulike-status="3" class="wp_ulike_btn wp_ulike_put_image wp_likethis_1949"></button><span class="count-box">0</span>			</div><div class="wp_ulike_likers_wrapper" style="display: none;"> <div class="wp-ulike-likers-list"><span class="wp-ulike-liker"><a href="#" title="aricasup_admin"><img src="http://arica.s201.upress.link/wp-content/plugins/ultimate-member/assets/img/default_avatar.jpg" class="gravatar avatar avatar-32 um-avatar um-avatar-default" width="32" height="32" alt="aricasup_admin" data-default="http://arica.s201.upress.link/wp-content/plugins/ultimate-member/assets/img/default_avatar.jpg" onerror="if ( ! this.getAttribute('data-load-error') ){ this.setAttribute('data-load-error', '1');this.setAttribute('src', this.getAttribute('data-default'));}"></a></span></div></div></div>
+					</span>	
+				</div>
 				<p class="sku">מק״ט 1478</p>
 				<div class="description">
 					<p>טקסט המסביר על המוצר, השימושיות שלו והיכן ממוקם בארץ. חברת שחם אריכא ממשיכה להוביל את הענף גם על המוצר, השימושיות שלו והיכן מלהוביל את הענף גם בתפיסה ירוקה לסביבה.</p>
+				</div>
+
+				<div class="parameters mobile">
+					<div class="line">
+						<span>אורך</span>
+						<span>254 ס״מ</span>
+					</div>
+					<div class="line">
+						<span>רוחב</span>
+						<span>54 ס״מ</span>
+					</div>
+					<div class="line">
+						<span>גובה</span>
+						<span>42 ס״מ</span>
+					</div>
+					<div class="line">
+						<span>רדיוס</span>
+						<span>50 ק״ג</span>
+					</div>
+					<div class="line">
+						<span>משקל</span>
+						<span>50 ק״ג</span>
+					</div>
 				</div>
 
 				<div class="sizes">
@@ -221,7 +308,7 @@
 			</div>
 
 			<div class="part visual">
-				<div class="main">
+				<div class="main desktop">
 					<div class="part-top">
 						<div class="button ask">
 							<span>שלח שאלה</span>
@@ -229,11 +316,14 @@
 						</div>
 						<div class="button fav">
 							<span>הוסף למועדפים</span>
-							<img src="images/icons/heart.png" alt="">
+							
+							<div class="wpulike wpulike-default "><div class="wp_ulike_general_class wp_ulike_is_unliked"><button type="button" data-ulike-id="1949" data-ulike-nonce="fd1b4c7458" data-ulike-type="likeThis" data-ulike-status="3" class="wp_ulike_btn wp_ulike_put_image wp_likethis_1949"></button><span class="count-box">0</span>			</div><div class="wp_ulike_likers_wrapper" style="display: none;"> <div class="wp-ulike-likers-list"><span class="wp-ulike-liker"><a href="#" title="aricasup_admin"><img src="http://arica.s201.upress.link/wp-content/plugins/ultimate-member/assets/img/default_avatar.jpg" class="gravatar avatar avatar-32 um-avatar um-avatar-default" width="32" height="32" alt="aricasup_admin" data-default="http://arica.s201.upress.link/wp-content/plugins/ultimate-member/assets/img/default_avatar.jpg" onerror="if ( ! this.getAttribute('data-load-error') ){ this.setAttribute('data-load-error', '1');this.setAttribute('src', this.getAttribute('data-default'));}"></a></span></div></div></div>
+
+
 						</div>
 					</div>
 					<div class="sides">
-						<div class="side right">
+						<div class="side right loading">
 							<div class="main-image">
 								<img src="images/inner/product/full.png" alt="">
 							</div>
@@ -243,7 +333,8 @@
 									<p class="caption">קבצים להורדה</p>
 									<div class="file">
 										<div class="icon">
-											<img src="images/icons/pdf.png" alt="">
+											<img src="images/icons/file.png" alt="">
+											<span class="ex">Pdf</span>
 										</div>
 										<div class="text">
 											<span>הרכבה</span>
@@ -251,7 +342,7 @@
 									</div>
 									<div class="file">
 										<div class="icon">
-											<img src="images/icons/ai.png" alt="">
+											<img src="images/icons/file.png" alt="">
 										</div>
 										<div class="text">
 											<span>שרטוטים</span>
@@ -259,7 +350,7 @@
 									</div>
 									<div class="file">
 										<div class="icon">
-											<img src="images/icons/cad.png" alt="">
+											<img src="images/icons/file.png" alt="">
 										</div>
 									</div>
 									<div class="file">
@@ -336,6 +427,7 @@
 					<div class="items">
 						<div class="item">
 							<img src="images/inner/product/family/1.png" alt="">
+							<p class="title">שם מוצר</p>
 						</div>
 						<div class="item">
 							<img src="images/inner/product/family/2.png" alt="">
@@ -388,7 +480,7 @@
 				<p>oded@arica.co.il</p>
 			</div>	
 
-			<div class="part">
+			<div class="part form">
 				<p class="title">הרשמה לניוזלטר</p>
 
 				<div role="form" class="wpcf7" id="wpcf7-f5-o1" lang="en-US" dir="ltr">
@@ -414,7 +506,7 @@
 				</div>
 			</div>
 
-			<div class="part">
+			<div class="part copyright">
 				<p>כל הזכויות שמורות 2020</p>
 			</div>
 		</div>

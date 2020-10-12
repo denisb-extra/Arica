@@ -99,7 +99,9 @@ function main() {
   {
     const gltfLoader = new GLTFLoader();
     //gltfLoader.load('3d-models/BrainStem/glTF/BrainStem.gltf', (gltf) => {
-    gltfLoader.load('3d-models/Cube/glTF/Cube.gltf', (gltf) => {
+    
+
+    gltfLoader.load('3d-models/sion/sion.gltf', (gltf) => {
       const root = gltf.scene;
       scene.add(root);
 
