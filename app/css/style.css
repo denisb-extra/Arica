@@ -2231,7 +2231,7 @@ section.product {
         padding-right: 40px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; }
+        justify-content: flex-end; }
         section.product .visual .main .sides .side.left .thumbs .thumb {
           text-align: center;
           margin-top: 20px;
